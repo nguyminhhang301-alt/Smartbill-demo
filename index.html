@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173c91">
+  <title>SmartBill — Financial Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast" class="toast" hidden></div>
+
+  <section id="loginView" class="login-page smartbill-landing-login">
+    <div class="landing-bluebar">
+      <div class="landing-bluebar-inner">
+        <span>🚀 GIẢI PHÁP KẾ TOÁN SỐ CHO HỘ KINH DOANH</span>
+        <button class="landing-lang active" data-lang-toggle><b>VN Tiếng Việt</b><span>GB English</span></button>
+      </div>
+    </div>
+
+    <header class="landing-navbar">
+      <a class="landing-brand" href="#"><span class="landing-brand-mark">SB</span><strong>Smart<span>Bill</span></strong></a>
+      <nav class="landing-links" aria-label="SmartBill">
+        <a href="#landing-features">Tính năng</a>
+        <a href="#landing-demo">Demo</a>
+        <a href="#landing-pricing">Bảng giá</a>
+        <a href="#landing-contact">Liên hệ</a>
+        <button id="landingTrial" class="landing-red-btn" type="button">Dùng thử miễn phí</button>
+      </nav>
+      <button id="landingMobileMenu" class="landing-mobile-menu" type="button">☰</button>
+    </header>
+
+    <main class="landing-hero">
+      <div class="landing-hero-inner">
+        <section class="landing-copy">
+          <span class="landing-eyebrow">🚀 GIẢI PHÁP KẾ TOÁN SỐ #1 CHO HỘ KINH DOANH</span>
+          <h1>Quản lý tài chính<br><em>thông minh hơn</em><br>cho hộ kinh doanh</h1>
+          <p>SmartBill biến hàng triệu hộ kinh doanh phi chính thức trở nên minh bạch với hệ thống tài chính — ghi nhận doanh thu tự động, quản lý chi phí, hỗ trợ khai thuế và vay vốn ngân hàng.</p>
+          <div class="landing-stats">
+            <div><strong>5.2<span>tr</span></strong><small>Hộ kinh doanh VN</small></div>
+            <div><strong>87<span>%</span></strong><small>Chưa dùng phần mềm</small></div>
+            <div><strong>73<span>%</span></strong><small>Bị từ chối vay vốn</small></div>
+          </div>
+          <div class="landing-actions">
+            <button id="landingLoginFocus" class="landing-red-btn large" type="button">Đăng nhập SmartBill →</button>
+            <button id="landingDemoScroll" class="landing-outline-btn" type="button">Xem bản demo</button>
+          </div>
+          <div class="landing-trust"><span>✓</span> Dữ liệu rõ ràng · <span>✓</span> Dễ sử dụng · <span>✓</span> Hỗ trợ AI</div>
+        </section>
+
+        <section class="landing-visual" id="landing-demo">
+          <div class="landing-ai-pill"><span></span> AI phân tích ✓</div>
+          <div class="landing-phone">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen">
+              <div class="phone-top"><div><small>Xin chào 👋</small><strong>Chị Lan - Quán bún bò</strong></div><b>🔔</b></div>
+              <div class="phone-revenue"><small>Doanh thu hôm nay</small><strong>2.450.000 ₫</strong><span>↑ +12% so với hôm qua</span></div>
+              <div class="phone-metrics">
+                <div><b>💰</b><small>Thu nhập</small><strong>3.2tr</strong></div>
+                <div><b>💸</b><small>Chi phí</small><strong>750k</strong></div>
+                <div><b>📊</b><small>Lợi nhuận</small><strong>2.45tr</strong></div>
+                <div><b>🧾</b><small>Thuế</small><strong>OK ✓</strong></div>
+              </div>
+              <div class="phone-chart-card">
+                <div><strong>Dòng tiền 7 ngày</strong><small>Đơn vị: triệu đồng</small></div>
+                <svg viewBox="0 0 300 105" preserveAspectRatio="none" aria-label="Biểu đồ dòng tiền 7 ngày">
+                  <defs><linearGradient id="heroChartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b7bec" stop-opacity=".35"/><stop offset="1" stop-color="#4b7bec" stop-opacity="0"/></linearGradient></defs>
+                  <path d="M0 82 C35 78 43 50 76 59 S112 72 145 39 S190 51 218 27 S263 41 300 15 L300 105 L0 105Z" fill="url(#heroChartFill)"/>
+                  <path d="M0 82 C35 78 43 50 76 59 S112 72 145 39 S190 51 218 27 S263 41 300 15" fill="none" stroke="#4b7bec" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="phone-transactions"><strong>GIAO DỊCH GẦN ĐÂY</strong><div><span>🍜</span><b>Bán buổi sáng<small>08:30</small></b><strong>+850k</strong></div><div><span>🛒</span><b>Nhập nguyên liệu<small>07:15</small></b><strong>-350k</strong></div><div><span>🍲</span><b>Bán buổi trưa<small>12:20</small></b><strong>+1.2tr</strong></div></div>
+            </div>
+          </div>
+          <div class="landing-sync-pill">● Đồng bộ thuế ✓</div>
+          <div class="landing-login-card">
+            <span class="landing-login-badge">✓ Phù hợp hộ kinh doanh Việt</span>
+            <h2>Đăng nhập</h2>
+            <p>Tài khoản demo: <b>demo@smartbill.vn</b> · <b>123456</b></p>
+            <form id="loginForm">
+              <label>Email hoặc số điện thoại<input id="loginEmail" value="demo@smartbill.vn" required></label>
+              <label>Mật khẩu<input id="loginPassword" type="password" value="123456" required></label>
+              <div class="landing-form-row"><label class="landing-check"><input type="checkbox" checked> Ghi nhớ tài khoản</label><button type="button" class="landing-text-btn">Quên mật khẩu?</button></div>
+              <button class="landing-red-btn full" type="submit">Đăng nhập <span>→</span></button>
+              <button id="openOnboarding" class="landing-outline-btn full" type="button">Tạo tài khoản mới</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section id="landing-features" class="landing-bottom-section">
+      <div><span>01</span><strong>Doanh thu</strong><small>Ghi nhận và theo dõi tiền vào.</small></div>
+      <div><span>02</span><strong>Chi phí</strong><small>Phân loại chi tiêu rõ ràng.</small></div>
+      <div><span>03</span><strong>Dòng tiền</strong><small>Biểu đồ trực quan theo ngày.</small></div>
+      <div><span>04</span><strong>Thuế & vay vốn</strong><small>Chuẩn bị dữ liệu minh bạch hơn.</small></div>
+    </section>
+    <div id="landing-pricing" class="landing-anchor"></div>
+    <div id="landing-contact" class="landing-anchor"></div>
+  </section>
+
+  <section id="onboardingView" class="onboarding-page" hidden>
+    <div class="onboarding-card">
+      <div class="brand"><span class="brand-mark">SB</span><div><strong>SmartBill</strong><small data-i18n="setupTitle">Thiết lập SmartBill</small></div></div>
+      <div id="stepper" class="stepper"></div>
+      <div id="onboardingBody" class="onboarding-body"></div>
+      <div class="wizard-actions"><button id="onboardingBack" class="secondary-button" type="button" data-i18n="back">Quay lại</button><button id="onboardingNext" class="primary-button" type="button" data-i18n="continue">Tiếp tục</button></div>
+    </div>
+  </section>
+
+  <div id="appView" class="app-shell" hidden>
+    <aside id="sidebar" class="sidebar" aria-hidden="true">
+      <nav id="mainNav"></nav>
+      <button id="logoutButton" type="button">Đăng xuất</button>
+      <button id="closeSidebar" type="button" class="mobile-only">×</button>
+    </aside>
+
+    <div class="app-main">
+      <header class="top-header smartbill-mainnav">
+        <a class="smartbill-logo" href="#/dashboard" data-route="dashboard">
+          <span class="brand-mark">SB</span>
+          <span><strong>SmartBill</strong><small>Quản lý tài chính</small></span>
+        </a>
+        <nav id="topNav" class="top-nav" aria-label="Điều hướng chính"></nav>
+        <div class="smartbill-header-actions">
+          <label class="header-search"><span>⌕</span><input data-i18n-placeholder="search" placeholder="Tìm kiếm"></label>
+          <button id="notificationShortcut" class="nav-action-button badge-dot" aria-label="Thông báo"></button>
+          <div class="user-chip"><span class="avatar avatar-initials" aria-label="Minh Anh">MA</span><div><strong id="headerProfileName">Minh Anh</strong><small data-i18n="businessOwner">Chủ hộ kinh doanh</small></div></div>
+          <button id="settingsShortcut" class="settings-shortcut" type="button" aria-label="Cài đặt"></button><button id="logoutButtonTop" class="logout-top" type="button">Đăng xuất</button>
+        </div>
+      </header>
+
+      <main id="pageHost" class="page-content"></main>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav"></nav>
+    <button id="mobileMenuButton" class="icon-button mobile-only" hidden>☰</button>
+    <button id="collapseSidebar" class="icon-button desktop-only" hidden>☷</button>
+    <button id="chatFab" class="chat-fab">✦</button>
+    <section id="chatPopup" class="chat-popup" hidden>
+      <header><div><strong>SmartBill AI</strong><small>Online</small></div><button id="closeChat" class="icon-button">×</button></header>
+      <div id="chatMessages" class="chat-messages"></div>
+      <footer><input id="chatInput" data-i18n-placeholder="chatPlaceholder" placeholder="Nhập câu hỏi…"><button id="chatSend">➤</button></footer>
+    </section>
+  </div>
+
+  <div id="modal" class="modal-backdrop" hidden>
+    <section class="modal-card"><header><h2 id="modalTitle"></h2><button id="modalClose" class="icon-button">×</button></header><div id="modalBody"></div></section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
